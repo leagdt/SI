@@ -9,37 +9,35 @@ Des sources de lumière ponctuelles sont ajoutées, et des calculs d’éclairag
 
 ### Structure du Projet
 
-- **projets/maison.cpp** : Implémente la classe `Skeleton` pour gérer les articulations du squelette et leurs transformations.
-- **shader/textureMaison.glsl** : Gère l'affichage et la mise à jour du squelette.
-- **shader/textureHeightMap.glsl** : Contrôle le déplacement du personnage via le clavier.
-- **shader/program_deffered.glsl** : Gère la physique des particules et leur interaction avec le personnage.
-- **shader/gbuffer.glsl** : Gère la physique des particules et leur interaction avec le personnage.
+- **projets/maison.cpp** : Crée et exécute une application 3D, préparant les objets, textures et buffers pour les envoyer aux shaders et effectuer le rendu.
+- **shader/textureMaison.glsl** : Ce shader permet de réaliser un rendu direct de la scène. Il transforme les sommets et transmet les informations nécessaires au calcul de la lumière. Il applique la texture, gère les fragments transparents et calcule la couleur finale à partir de plusieurs sources lumineuses.
+- **shader/textureHeightMap.glsl** : Ce shader permet de générer la heightmap de la scène. Il calcule et renvoie une hauteur pour chaque pixel.
+- **shader/gbuffer.glsl** : Ce shader remplit un g-buffer en renvoyant dans différentes textures les informations nécessaires : la couleur de la matière, la normale et la profondeur.
+- **shader/program_deffered.glsl** : Ce shader est utilisé pour le rendu indirect. Il récupère les informations du g-buffer et calcule la couleur finale en tenant compte des différentes sources de lumière.
 
 ### Fonctionnalités
 
 #### Partie 1 : Affichage de la scène et gestion de la caméra
 
-- Implémentation de la classe `Skeleton` pour gérer un tableau d'articulations (`SkeletonJoint`).
-- Affichage des squelettes en utilisant les transformations appropriées.
-- Initialisation et mise à jour des positions des articulations.
+- Gestion de la caméra : appuyer sur "O" pour changer de point de vue (mode orbiter ou première personne).
+- Déplacements : en mode première personne, les touches Z, Q, S, D permettent de se déplacer. Une heightmap est utilisée pour éviter de traverser les murs et permettre de monter sur de petits obstacles. Cependant, cette méthode pose un problème avec les toits, car seule une hauteur est stockée par position. Il faudrait lancer un rayon pour corriger cela, mais ce serait plus coûteux.
+- Gestion de la transparence des objets.
 
 #### Partie 2 : Placement des lumières et calcul de la couleur
 
-- Implémentation de la classe `CharacterController` pour contrôler le déplacement du personnage.
-- Déplacement d'une sphère en utilisant les touches du clavier pour accélérer, freiner, tourner et sauter.
+- Calcul de l'éclairage direct : trop lent quand le nombre de lumière est trop important.
 
 #### Partie 3 : Rendu indirect
 
-- Calcul de distance entre 2 poses afin de construire le graphe d'animation.
-- Construction automatique d'un graphe d'animation pour gérer les transitions entre animations (4 animations :Idle, Walk, Run et Kick).
-- Implémentation d'une machine à état (classe `FiniteStateMachine`), qui nous permet de passer dans différent états, comme Idle, walk, Jump, Backflip...
-- Gestion du temps et interpolation entre 2 frames. 
+- Construction du G-Buffer : stockage des informations essentielles de la scène comme la couleur, les normales et la profondeur en plusieurs textures.
+- Calcul de l’éclairage indirect : utilisation des données du G-Buffer pour déterminer la couleur finale des pixels en fonction des différentes sources de lumière.
 
 #### Partie 4 : Frustum Culling
 
-- Implémentation de la physique des particules.
-- Gestion des collisions entre les particules et le sol. (Effet de balle qui rebondit)
-- Le personnage peut intéragir avec les particules s'il y a collision. 
+la scène 3D est découpée en cubes NxNxN. Pour chaque cube, trois tests sont effectués pour déterminer s’il est entièrement hors du frustum :
+- Test dans le repère monde : on vérifie si tous les sommets du cube se trouvent d’un seul côté d’un plan du frustum.
+- Test dans le repère projectif : si le cube n’a pas été exclu, on teste à nouveau la position des sommets par rapport aux plans du frustum transformés.
+- Test des sommets individuels : si le cube semble partiellement à l’extérieur, on vérifie si au moins un sommet est complètement hors du frustum ; si tous les sommets sont hors, le cube n’est pas dessiné, ce qui optimise le rendu.
 
 ### Instructions de Compilation et d'Exécution
 
@@ -68,16 +66,12 @@ Le TP consiste à générer une image en lançant des rayons depuis la caméra v
 
 ### Structure du Projet
 
-- **projets/lancerRayons.cpp** : Implémente la classe `Skeleton` pour gérer les articulations du squelette et leurs transformations.
+- **projets/lancerRayons.cpp** : Génère une image qui permet de visualiser une scène 3D grâce à du lancer de rayons.
 
-### Fonctionnalités
+### Fonctionnalités implémentées 
 
 #### Partie 1 : Rendu de l'image en utilisant le lancer de rayons
-
-
 #### Partie 2 : Calcul de l'éclairage 
-
-
 #### Partie 3 : Eclairage direct efficace
 
 ### Instructions de Compilation et d'Exécution
