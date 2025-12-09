@@ -1,0 +1,342 @@
+Wavefront OBJ material file
+# Contains 84 materials
+
+newmtl Stone
+Kd 0.470588 0.470588 0.470588
+map_Kd rungholt-RGBA.png
+
+newmtl Grass
+Kd 0.470588 0.701961 0.301961
+map_Kd rungholt-RGBA.png
+
+newmtl Dirt
+Kd 0.54902 0.388235 0.266667
+map_Kd rungholt-RGBA.png
+
+newmtl Cobblestone
+Kd 0.509804 0.509804 0.509804
+map_Kd rungholt-RGBA.png
+
+newmtl Wooden_Plank
+Kd 0.623529 0.505882 0.313726
+map_Kd rungholt-RGBA.png
+
+newmtl Sapling
+Kd 0.482353 0.603922 0.160784
+map_Kd rungholt-RGBA.png
+
+newmtl Stationary_Water
+Kd 0.160784 0.364706 0.996078
+map_Kd rungholt-RGBA.png
+map_d rungholt-Alpha.png
+# Tr 0.535
+Tf 0.91398 0.804882 0.467098
+
+newmtl Stationary_Lava
+Kd 0.960784 0.427451 0
+map_Kd rungholt-RGBA.png
+
+newmtl Sand
+Kd 0.878431 0.847059 0.65098
+map_Kd rungholt-RGBA.png
+
+newmtl Gravel
+Kd 0.521569 0.482353 0.482353
+map_Kd rungholt-RGBA.png
+
+newmtl Iron_Ore
+Kd 0.737255 0.6 0.501961
+map_Kd rungholt-RGBA.png
+
+newmtl Coal_Ore
+Kd 0.203922 0.203922 0.203922
+map_Kd rungholt-RGBA.png
+
+newmtl Log
+Kd 0.694118 0.564706 0.352941
+map_Kd rungholt-RGBA.png
+
+newmtl Leaves
+Kd 0.223529 0.670588 0.152941
+map_Kd rungholt-RGBA.png
+
+newmtl Glass
+Kd 0.752941 0.964706 0.996078
+map_Kd rungholt-RGBA.png
+
+newmtl Dispenser
+Kd 0.435294 0.435294 0.435294
+map_Kd rungholt-RGBA.png
+
+newmtl Sandstone
+Kd 0.878431 0.847059 0.65098
+map_Kd rungholt-RGBA.png
+
+newmtl Bed
+Kd 1 0.2 0.2
+map_Kd rungholt-RGBA.png
+
+newmtl Tall_Grass
+Kd 0.407843 0.639216 0.239216
+map_Kd rungholt-RGBA.png
+
+newmtl Piston
+Kd 0.584314 0.466667 0.294118
+map_Kd rungholt-RGBA.png
+
+newmtl Piston_Head
+Kd 0.584314 0.466667 0.294118
+map_Kd rungholt-RGBA.png
+
+newmtl Dandelion
+Kd 0.996078 0.996078 0.00784314
+map_Kd rungholt-RGBA.png
+
+newmtl Rose
+Kd 1 0.0588235 0.0588235
+map_Kd rungholt-RGBA.png
+
+newmtl Brown_Mushroom
+Kd 0.756863 0.568627 0.443137
+map_Kd rungholt-RGBA.png
+
+newmtl Red_Mushroom
+Kd 0.988235 0.360784 0.364706
+map_Kd rungholt-RGBA.png
+
+newmtl Gold_Block
+Kd 0.996078 0.968627 0.305882
+map_Kd rungholt-RGBA.png
+
+newmtl Iron_Block
+Kd 0.933333 0.933333 0.933333
+map_Kd rungholt-RGBA.png
+
+newmtl Double_Slab
+Kd 0.65098 0.65098 0.65098
+map_Kd rungholt-RGBA.png
+
+newmtl Stone_Slab
+Kd 0.647059 0.647059 0.647059
+map_Kd rungholt-RGBA.png
+
+newmtl Brick
+Kd 0.627451 0.501961 0.482353
+map_Kd rungholt-RGBA.png
+
+newmtl Bookshelf
+Kd 0.47451 0.352941 0.223529
+map_Kd rungholt-RGBA.png
+
+newmtl Moss_Stone
+Kd 0.384314 0.443137 0.384314
+map_Kd rungholt-RGBA.png
+
+newmtl Obsidian
+Kd 0.105882 0.0901961 0.160784
+map_Kd rungholt-RGBA.png
+
+newmtl Torch
+Kd 0.988235 0.988235 0
+map_Kd rungholt-RGBA.png
+
+newmtl Fire
+Kd 0.988235 0.631373 0
+map_Kd rungholt-RGBA.png
+
+newmtl Monster_Spawner
+Kd 0.145098 0.258824 0.329412
+map_Kd rungholt-RGBA.png
+
+newmtl Wooden_Stairs
+Kd 0.619608 0.501961 0.309804
+map_Kd rungholt-RGBA.png
+
+newmtl Chest
+Kd 0.627451 0.435294 0.137255
+map_Kd rungholt-RGBA.png
+
+newmtl Redstone_Wire
+Kd 0.839216 0 0
+map_Kd rungholt-RGBA.png
+
+newmtl Crafting_Table
+Kd 0.509804 0.329412 0.196078
+map_Kd rungholt-RGBA.png
+
+newmtl Crops
+Kd 0.462745 0.4 0.0823529
+map_Kd rungholt-RGBA.png
+
+newmtl Farmland
+Kd 0.25098 0.133333 0.0431373
+map_Kd rungholt-RGBA.png
+
+newmtl Furnace
+Kd 0.462745 0.462745 0.466667
+map_Kd rungholt-RGBA.png
+
+newmtl Sign_Post
+Kd 0.623529 0.505882 0.309804
+map_Kd rungholt-RGBA.png
+
+newmtl Wooden_Door
+Kd 0.494118 0.364706 0.176471
+map_Kd rungholt-RGBA.png
+
+newmtl Ladder
+Kd 0.666667 0.52549 0.317647
+map_Kd rungholt-RGBA.png
+
+newmtl Rail
+Kd 0.407843 0.407843 0.407843
+map_Kd rungholt-RGBA.png
+
+newmtl Cobblestone_Stairs
+Kd 0.505882 0.505882 0.505882
+map_Kd rungholt-RGBA.png
+
+newmtl Wall_Sign
+Kd 0.65098 0.541176 0.27451
+map_Kd rungholt-RGBA.png
+
+newmtl Lever
+Kd 0.541176 0.415686 0.239216
+map_Kd rungholt-RGBA.png
+
+newmtl Stone_Plate
+Kd 0.643137 0.643137 0.643137
+map_Kd rungholt-RGBA.png
+
+newmtl Iron_Door
+Kd 0.698039 0.698039 0.698039
+map_Kd rungholt-RGBA.png
+
+newmtl Wooden_Plate
+Kd 0.615686 0.498039 0.305882
+map_Kd rungholt-RGBA.png
+
+newmtl Redstone_Torch_(off)
+Kd 0.337255 0 0
+map_Kd rungholt-RGBA.png
+
+newmtl Redstone_Torch_(on)
+Kd 0.992157 0 0
+map_Kd rungholt-RGBA.png
+
+newmtl Stone_Button
+Kd 0.67451 0.67451 0.67451
+map_Kd rungholt-RGBA.png
+
+newmtl Clay
+Kd 0.635294 0.654902 0.705882
+map_Kd rungholt-RGBA.png
+
+newmtl Sugar_Cane
+Kd 0.447059 0.580392 0.305882
+map_Kd rungholt-RGBA.png
+
+newmtl Fence
+Kd 0.623529 0.505882 0.305882
+map_Kd rungholt-RGBA.png
+
+newmtl Netherrack
+Kd 0.447059 0.227451 0.219608
+map_Kd rungholt-RGBA.png
+
+newmtl Glowstone
+Kd 0.976471 0.831373 0.611765
+map_Kd rungholt-RGBA.png
+
+newmtl Jack-O-Lantern
+Kd 0.913725 0.705882 0.0862745
+map_Kd rungholt-RGBA.png
+
+newmtl Cake
+Kd 1 0.992157 0.992157
+map_Kd rungholt-RGBA.png
+
+newmtl Repeater_(on)
+Kd 0.933333 0.333333 0.333333
+map_Kd rungholt-RGBA.png
+
+newmtl Trapdoor
+Kd 0.533333 0.4 0.203922
+map_Kd rungholt-RGBA.png
+
+newmtl Stone_Brick
+Kd 0.47451 0.47451 0.47451
+map_Kd rungholt-RGBA.png
+
+newmtl Iron_Bars
+Kd 0.639216 0.643137 0.643137
+map_Kd rungholt-RGBA.png
+
+newmtl Glass_Pane
+Kd 0.752941 0.964706 0.996078
+map_Kd rungholt-RGBA.png
+
+newmtl Vines
+Kd 0.117647 0.298039 0.0392157
+map_Kd rungholt-RGBA.png
+
+newmtl Fence_Gate
+Kd 0.658824 0.529412 0.329412
+map_Kd rungholt-RGBA.png
+
+newmtl Brick_Stairs
+Kd 0.627451 0.501961 0.482353
+map_Kd rungholt-RGBA.png
+
+newmtl Stone_Brick_Stairs
+Kd 0.47451 0.47451 0.47451
+map_Kd rungholt-RGBA.png
+
+newmtl Lily_Pad
+Kd 0.0470588 0.372549 0.0784314
+map_Kd rungholt-RGBA.png
+
+newmtl Enchantment_Table
+Kd 0.65098 0.439216 0.101961
+map_Kd rungholt-RGBA.png
+
+newmtl White_Wool
+Kd 0.866667 0.866667 0.866667
+map_Kd rungholt-RGBA.png
+
+newmtl Orange_Wool
+Kd 0.917647 0.501961 0.215686
+map_Kd rungholt-RGBA.png
+
+newmtl Light_Blue_Wool
+Kd 0.4 0.537255 0.827451
+map_Kd rungholt-RGBA.png
+
+newmtl Gray_Wool
+Kd 0.262745 0.262745 0.262745
+map_Kd rungholt-RGBA.png
+
+newmtl Light_Gray_Wool
+Kd 0.615686 0.643137 0.643137
+map_Kd rungholt-RGBA.png
+
+newmtl Cyan_Wool
+Kd 0.152941 0.454902 0.580392
+map_Kd rungholt-RGBA.png
+
+newmtl Brown_Wool
+Kd 0.337255 0.2 0.105882
+map_Kd rungholt-RGBA.png
+
+newmtl Green_Wool
+Kd 0.215686 0.301961 0.0941176
+map_Kd rungholt-RGBA.png
+
+newmtl Red_Wool
+Kd 0.639216 0.172549 0.156863
+map_Kd rungholt-RGBA.png
+
+newmtl Black_Wool
+Kd 0.105882 0.0901961 0.0901961
+map_Kd rungholt-RGBA.png
+
