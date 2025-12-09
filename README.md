@@ -54,8 +54,6 @@ make maison
 
 Pour exécutez le programme, dans le même terminal, exécutez une des commandes suivantes : 
 
-- Si vous voulez lancer le mode avec le graphe d'animation automatique : 
-
 ```sh
 ./bin/maison
 ```
@@ -71,8 +69,11 @@ Le TP consiste à générer une image en lançant des rayons depuis la caméra v
 ### Fonctionnalités implémentées 
 
 #### Partie 1 : Rendu de l'image en utilisant le lancer de rayons
+Cette partie consiste à générer l’image en utilisant la technique du lancer de rayons (ray tracing), qui simule le trajet des rayons lumineux depuis la caméra jusqu’aux objets de la scène.
 #### Partie 2 : Calcul de l'éclairage 
+Dans cette partie, une méthode de Monte Carlo simple est implémentée afin de générer aléatoirement la direction des rayons. Cette approche permet d’approximer l’éclairage global de manière statistique.
 #### Partie 3 : Eclairage direct efficace
+Dans cette partie, la méthode de Monte Carlo est appliquée uniquement aux sources de lumière afin d’accélérer le rendu. Cette optimisation permet d’obtenir une image plus propre, avec moins de bruit, tout en réduisant le nombre de rayons nécessaires.
 
 ### Instructions de Compilation et d'Exécution
 
@@ -89,8 +90,25 @@ make lancerRayons
 
 Pour exécutez le programme, dans le même terminal, exécutez une des commandes suivantes : 
 
-- Si vous voulez lancer le mode avec le graphe d'animation automatique : 
+-Cette commande lance le programme avec les paramètres par défaut : 16 rayons par pixel pour simuler la lumière et l’utilisation de la méthode de Monte Carlo efficace (les rayons sont dirigés directement vers les sources de lumière) :
 
 ```sh
 ./bin/lancerRayons
 ```
+
+- Cette commande lance le programme avec 256 rayons par pixel et la méthode de Monte Carlo efficace :
+
+```sh
+./bin/lancerRayons 256
+```
+
+- Cette commande lance le programme avec 256 rayons par pixel et la méthode de Monte Carlo simple :
+
+```sh
+./bin/lancerRayons 256 1
+```
+
+
+#### Résultat
+
+Une image est générée à la fin de l’exécution du programme. Elle est nommée « rendu_monteCarlo_simple » lorsque la méthode de Monte Carlo simple est utilisée et « rendu_monteCarlo_efficace » lorsque la méthode de Monte Carlo optimisée est utilisée. L’image est enregistrée au format HDR et peut être visualisée à l’aide de l’application tev.
